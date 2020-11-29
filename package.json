@@ -1,0 +1,31 @@
+{
+  "name": "recaptcha-v3-v2",
+  "version": "1.0.14",
+  "description": "Super small Recaptcha library. Uses Recaptcha v3 by default. Fails over to v2 when v3 score seems low. Detects darkmode automatically. Super simple setup. Requires server side setup. Cleans up after itself.",
+  "main": "recaptcha.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "recaptcha",
+    "recaptcha-v3",
+    "recaptcha-v2"
+  ],
+  "author": "Mir Abid Hussain",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prodevsca/recaptcha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prodevsca/recaptcha/issues"
+  },
+  "homepage": "https://github.com/prodevsca/recaptcha#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
+  }
+}

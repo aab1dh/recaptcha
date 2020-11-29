@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="#">
+      <button
+        type="submit"
+        onClick="recaptcha.checkScore(event, 'Login', submitForm, 'body',  document.getElementsByClassName('g-recaptcha')[0], 'https://us-central1-setlr-9c9d9.cloudfunctions.net/sendRecaptcha', '6Lde1-4ZAAAAAJ_4w8uiYCVDOCVqUv-zATg5Loof', '6Lfqz7wSAAAAANrGR8GGk_K0uTc65uBh-NSfkObw', 0.5)"
+      >
+        Submit
+      </button>
+    </form>
+    <script async defer type="module" src="./dist/recaptcha.js"></script>
+    <script type="text/javascript">
+      let recaptcha = {
+        render: "6Lde1-4ZAAAAAJ_4w8uiYCVDOCVqUv-zATg5Loof",
+      };
+    </script>
+    <script type="text/javascript">
+      submitForm = () => {
+        console.log("form submitted");
+      };
+    </script>
+  </body>
+</html>
